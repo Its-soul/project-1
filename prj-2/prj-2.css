@@ -78,7 +78,7 @@ body {
 }
 
 .dropdown-content a {
-    color: #333;
+    color: #000000;
     padding: 8px 16px;
     text-decoration: none;
     display: block;
@@ -86,7 +86,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #86f2f8;
 }
 
 .profile-dropdown:hover .dropdown-content {
