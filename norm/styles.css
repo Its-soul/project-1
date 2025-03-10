@@ -1,0 +1,33 @@
+/* Set the background to black and text color to white */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: white;
+}
+
+/* Style for links (bright blue) */
+a {
+    color: #1e90ff; /* Bright blue color for the link */
+}
+
+/* Style for the table */
+table {
+    color: white;
+    border: 1px solid white;
+    margin-top: 20px;
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Footer style */
+footer {
+    margin-top: 20px;
+}
