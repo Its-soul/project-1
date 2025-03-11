@@ -120,11 +120,12 @@ body {
 }
 
 .search-bar input {
-    padding: 0.7rem;
-    width: 350px;
+    padding: 0.9rem;
+    width: 400px;
     border: none;
     border-radius: 25px;
     margin-right: 1rem;
+    box-shadow: #86f2f8;
 }
 
 .btn {
