@@ -113,3 +113,51 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Default Light Theme */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --navbar-color: #2c3e50;
+    --navbar-text-color: #ffffff;
+    --card-background: #f9f9f9;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --navbar-color: #1a1a1a;
+    --navbar-text-color: #e0e0e0;
+    --card-background: #1e1e1e;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply Theme Colors */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background-color: var(--navbar-color);
+    color: var(--navbar-text-color);
+}
+
+.nav-links a {
+    color: var(--navbar-text-color);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--navbar-text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #3498db;
+}

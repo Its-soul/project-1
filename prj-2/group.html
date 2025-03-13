@@ -5,17 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudySphere - Study Tracker</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="prj-2.css">
-    <link rel="stylesheet" href="tracker.css">
+    <link rel="stylesheet" href="group.css">
     <script type="module" src="main.js"></script> <!-- Load your main JS file -->
 </head>
 <body>
     <header>
         <!-- Navbar will be injected here -->
-        <!-- Navbar will be injected here -->
-        <!-- Navbar will be injected here -->
-        <!-- Navbar will be injected here -->
-        <!-- Navbar will be injected here -->
     </header>
+    <!-- Group Section -->
+    <section class="group-section">
+        <div class="group-header">
+            <h1>Join a Study Group</h1>
+            <p>Collaborate, learn, and grow with like-minded students</p>
+        </div>
+
+        <!-- Search & Filters -->
+        <div class="search-filters">
+            <input type="text" id="searchInput" placeholder="Search by group name or subject...">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+                <option value="Chemistry">Chemistry</option>
+            </select>
+        </div>
+
+        <!-- Group Grid -->
+        <div class="group-grid" id="groupGrid">
+            <!-- Group cards will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <script src="group.js"></script>
 </body>
 </html>
