@@ -58,7 +58,7 @@ body {
     padding: 1rem;
 }
 
-/* Rest of your tracker styles */
+/* Tracker Header */
 .tracker-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -69,6 +69,7 @@ body {
     color: #2c3e50;
 }
 
+/* Grid Layout */
 .tracker-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -97,6 +98,7 @@ body {
     transition: width 0.3s ease;
 }
 
+/* Timer */
 .timer {
     text-align: center;
     margin: 2rem 0;
@@ -123,6 +125,7 @@ body {
     background: #2980b9;
 }
 
+/* Study Sessions */
 .study-sessions {
     margin-top: 2rem;
 }
@@ -146,8 +149,109 @@ body {
     font-weight: bold;
 }
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    body {
+        padding-top: 60px; /* Adjust padding for tablets */
+    }
+
+    .tracker-header h1 {
+        font-size: 2rem;
+    }
+
+    .tracker-card {
+        padding: 1rem;
+    }
+
+    .progress-bar {
+        height: 18px;
+    }
+
+    .timer-display {
+        font-size: 2.5rem;
+    }
+
+    .session-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .session-item span {
+        margin-bottom: 0.5rem;
+    }
+}
+
 @media (max-width: 768px) {
+    body {
+        padding-top: 60px; /* Adjust padding for smaller screens */
+    }
+
+    .tracker-header h1 {
+        font-size: 1.8rem;
+    }
+
     .tracker-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .tracker-card {
+        padding: 1rem;
+    }
+
+    .progress-bar {
+        height: 15px;
+    }
+
+    .timer-display {
+        font-size: 2rem;
+    }
+
+    .timer-controls button {
+        padding: 0.5rem 1rem;
+    }
+
+    .session-item {
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0.8rem;
+    }
+
+    .tracker-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .tracker-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .tracker-card {
+        padding: 0.8rem;
+    }
+
+    .progress-bar {
+        height: 12px;
+    }
+
+    .timer-display {
+        font-size: 1.5rem;
+    }
+
+    .timer-controls button {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .session-item {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .session-item span {
+        font-size: 1rem;
     }
 }

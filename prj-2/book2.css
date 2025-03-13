@@ -108,9 +108,102 @@ body {
     background: #1f669e;
 }
 
+@media (max-width: 1024px) {
+    .book-header h1 {
+        font-size: 2rem;
+    }
+    .book-header p {
+        font-size: 1rem;
+    }
+
+    .book-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .search-filters input,
+    .search-filters select {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .book-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-card p {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 768px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .book-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .book-header p {
+        font-size: 1rem;
+    }
+
     .book-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .search-filters {
+        flex-direction: column;
+    }
+
+    .search-filters input,
+    .search-filters select {
+        width: 100%;
+    }
+
+    .book-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .book-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 40px;
+    }
+
+    .book-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .book-header p {
+        font-size: 0.9rem;
+    }
+
+    .search-filters input,
+    .search-filters select {
+        font-size: 0.8rem;
+    }
+
+    .book-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .book-card p {
+        font-size: 0.85rem;
+    }
+
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
     }
 }
 
