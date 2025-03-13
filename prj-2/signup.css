@@ -68,40 +68,76 @@ body {
 
 /* Button Styling */
 .btn {
-    border-width: 1px;
-    width: 60px;
-    height: 20px;
-    /*border-radius*/
-    border-radius: 100px;
-    background: #fff;
-    position: absolute;
-    border: 5px solid #6fb07f
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px; /* Fixed width */
+    height: 45px; /* Fixed height */
+    border-radius: 50px;
+    background: #6fb07f;
+    border: 2px solid #6fb07f;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
 }
 
 button > span {
-    font-size: 20px;
-    color: #6fb07f
+    font-size: 18px;
+    color: #fff;
+}
+
+/* Ensure button size does not change on focus */
+button:focus {
+    animation: extend 1s ease-in-out;
+    animation-fill-mode: forwards;
+    width: 130px !important;
+    height: 45px !important;
+}
+
+/* Ensure text disappears smoothly */
+button:focus > span {
+    animation: disappear 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/* Ensure image stays properly positioned */
+button img {
+    width: 24px; /* Fixed size */
+    height: 24px; /* Fixed size */
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+}
+
+/* Ensure image appears smoothly */
+button:focus > img {
+    animation: appear 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 1;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .btn {
+        width: 110px;
+        height: 40px;
+        font-size: 16px;
     }
-
-.btn:hover {
-    background-color: #2980b9;
 }
 
-p {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
+@media (max-width: 480px) {
+    .btn {
+        width: 100px;
+        height: 38px;
+        font-size: 14px;
+    }
 }
 
-p a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
-}
-
+/* Keyframe Animations */
 @keyframes extend {
     0% {
         width: 100%;
@@ -155,23 +191,24 @@ p a:hover {
     }
 }
 
+/* Container to maintain button position */
 .cont {
     position: relative;
     width: 100%;
     margin-top: 1rem;
 }
 
-button:focus {
-    animation: extend 1s ease-in-out;
-    animation-fill-mode: forwards;
+p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
-button:focus > span {
-    animation: disappear 1s ease-in-out;
-    animation-fill-mode: forwards;
+p a {
+    color: #3498db;
+    text-decoration: none;
 }
 
-button:focus > img {
-    animation: appear 1s ease-in-out;
-    animation-fill-mode: forwards;
+p a:hover {
+    text-decoration: underline;
 }
