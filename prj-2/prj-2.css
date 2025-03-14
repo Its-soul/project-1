@@ -9,8 +9,8 @@ body {
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
-
 
 /* cls-1 Section */
 .cls-1 {
@@ -18,12 +18,13 @@ body {
     color: white;
     padding: 10rem 2rem;
     text-align: center;
+    animation: fadeIn 1s ease-out;
 }
 
 .cls-1 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    animation: fadeIn 1s ease-out;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .cls-1 p {
@@ -39,6 +40,13 @@ body {
     border-radius: 25px;
     margin-right: 1rem;
     box-shadow: #86f2f8;
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+.search-bar input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+    width: 450px;
 }
 
 .btn {
@@ -49,17 +57,23 @@ body {
     border-radius: 20px;
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #125cf0;
+    transform: scale(1.05); /* Subtle scaling effect */
+}
+
+.btn:focus {
+    outline: 3px solid #3498db;
 }
 
 /* Features Section */
 .features {
     padding: 5rem 2rem;
     background: #fff;
+    animation: fadeIn 1s ease-out;
 }
 
 .features h2 {
@@ -67,6 +81,7 @@ body {
     margin-bottom: 3rem;
     font-size: 2.5rem;
     font-weight: 600;
+    animation: fadeIn 1.5s ease-out;
 }
 
 .features-grid {
@@ -82,13 +97,14 @@ body {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Smooth transformations */
     text-align: center;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1); /* Brightens on hover */
 }
 
 .feature-card h3 {
@@ -127,18 +143,24 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 .book-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1);
 }
 
 .book-card img {
     max-width: 150px;
     height: auto;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease; /* Image zoom effect */
+}
+
+.book-card img:hover {
+    transform: scale(1.1);
 }
 
 .book-card h4 {
@@ -152,18 +174,114 @@ body {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
+@media (max-width: 1024px) {
+    body {
+        padding-top: 60px; /* Adjust padding for tablets */
     }
 
-    .mobile-menu {
-        display: block;
+    .cls-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .cls-1 p {
+        font-size: 1.1rem;
+    }
+
+    .search-bar input {
+        width: 300px;
     }
 
     .features-grid,
     .books-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-card, .book-card {
+        padding: 1.5rem;
+    }
+
+    .feature-card h3, .book-card h4 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 50px; /* Adjust padding for smaller tablets */
+    }
+
+    .cls-1 h1 {
+        font-size: 2rem;
+    }
+
+    .cls-1 p {
+        font-size: 1rem;
+    }
+
+    .search-bar input {
+        width: 250px;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .features h2, .book-listings h2 {
+        font-size: 2rem;
+    }
+
+    .features-grid,
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card, .book-card {
+        padding: 1rem;
+    }
+
+    .feature-card h3, .book-card h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 40px; /* Adjust padding for smaller devices */
+    }
+
+    .cls-1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .cls-1 p {
+        font-size: 0.9rem;
+    }
+
+    .search-bar input {
+        width: 200px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .features h2, .book-listings h2 {
+        font-size: 1.8rem;
+    }
+
+    .features-grid,
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card, .book-card {
+        padding: 0.8rem;
+    }
+
+    .feature-card h3, .book-card h4 {
+        font-size: 1rem;
     }
 }
 

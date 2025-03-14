@@ -1,6 +1,5 @@
-// loadNavbar.js
 export function loadNavbar() {
-    fetch('nav.html') // Changed the URL from 'nav.html' to 'navbar.html'
+    fetch('nav.html') // Ensure the correct URL for 'navbar.html' or 'nav.html'
         .then(response => response.text())
         .then(data => {
             // Insert the navbar into the <header> tag
@@ -10,8 +9,9 @@ export function loadNavbar() {
             const mobileMenu = document.querySelector('.mobile-menu');
             const navLinks = document.querySelector('.nav-links');
 
+            // Toggle the 'active' class to show/hide the nav links
             mobileMenu.addEventListener('click', () => {
-                navLinks.classList.toggle('show');
+                navLinks.classList.toggle('active');
             });
 
             // Add event listeners for loading overlay
