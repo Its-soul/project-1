@@ -1,17 +1,11 @@
-// Form validation for the signup page
-const signupForm = document.getElementById('signupForm');
-const errorMessage = document.getElementById('errorMessage');
+const container = document.getElementById("container");
+const registerBtn = document.getElementById("register");
+const loginBtn = document.getElementById("login");
 
-signupForm.addEventListener('submit', function(e) {
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
+registerBtn.addEventListener("click", () => {
+  container.classList.add("active");
+});
 
-    // Clear the error message
-    errorMessage.textContent = '';
-
-    // Validate password match
-    if (password !== confirmPassword) {
-        e.preventDefault(); // Stop form submission
-        errorMessage.textContent = "Passwords do not match. Please try again.";
-    }
+loginBtn.addEventListener("click", () => {
+  container.classList.remove("active");
 });

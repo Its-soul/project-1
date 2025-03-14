@@ -48,7 +48,6 @@
 }
 
 .nav-links a {
-    color: white;
     text-decoration: none;
     font-weight: 400;
     color: var(--navbar-text-color);
@@ -97,11 +96,11 @@
     cursor: pointer;
 }
 
-/* .mobile-menu:before {
+.mobile-menu:before {
     content: "\2630"; /* Hamburger icon */
-    /* font-size: 2rem; */
-    /* color: var(--navbar-text-color); */
-/* } */
+    font-size: 2rem;
+    color: var(--navbar-text-color);
+}
 
 /* Loading Overlay */
 .loading-overlay {
@@ -238,10 +237,4 @@ body {
     .theme-toggle {
         font-size: 1rem;
     }
-}
-
-
-/* Optional Transitions for Menu */
-.nav-links {
-    transition: all 0.3s ease;
 }

@@ -1,50 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudySphere - Sign Up</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="signup.css" />
+    <title>Login Page | Caged coder</title>
+    <script type="module" src="main.js"></script> <!-- Load your main JS file -->
+  </head>
 
-    <!-- Signup Section -->
-    <section class="signup-section">
-        <div class="signup-container">
-            <h2>Create Your Account</h2>
-            <form id="signupForm">
-                <div class="input-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                </div>
-
-                <div class="input-group">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" required>
-                </div>
-
-                <div class="error-message" id="errorMessage"></div>
-
-                <div class="cont">	
-                    <button type="submit" class="btn"><span>Submit</span><img src="https://i.cloudup.com/2ZAX3hVsBE-3000x3000.png" height="62" width="62"></button>
-                </div>
-            </form>
-
-            <p>Already have an account? <a href="login.html">Sign In</a></p>
+  <body>
+    <header>
+        <!-- Navbar will be injected here -->
+    </header>
+    <div class="container" id="container">
+      <div class="form-container sign-up">
+        <form>
+          <h1>Create Account</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span>or use your email for registeration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in">
+        <form>
+          <h1>Sign In</h1>
+          <div class="social-icons">
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-google-plus-g"></i
+            ></a>
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="icon"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <span>or use your email password</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forget Your Password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="toggle-container">
+        <div class="toggle">
+          <div class="toggle-panel toggle-left">
+            <h1>Welcome Back!</h1>
+            <p>Enter your personal details to use all of site features</p>
+            <button class="hidden" id="login">Sign In</button>
+          </div>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello, Friend!</h1>
+            <p>
+              Register with your personal details to use all of site features
+            </p>
+            <button class="hidden" id="register">Sign Up</button>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
 
     <script src="signup.js"></script>
-</body>
+  </body>
 </html>
