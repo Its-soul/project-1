@@ -1,6 +1,7 @@
 /* Default Styles for Large Screens */
 .navbar {
     background: #34495e;
+    left:0;
     padding: 1rem;
     position: fixed;
     width: 100%;
