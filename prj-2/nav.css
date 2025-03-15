@@ -97,12 +97,6 @@
     cursor: pointer;
 }
 
-/* .mobile-menu:before { */
-    /* content: "\2630"; Hamburger icon */
-    /* font-size: 2rem; */
-    /* color: var(--navbar-text-color); */
-/* } */
-
 /* Loading Overlay */
 .loading-overlay {
     position: fixed;

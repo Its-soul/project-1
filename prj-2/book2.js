@@ -6,7 +6,7 @@ const books = [
         type: "Sell",
         price: 4500,
         condition: "Good",
-        image: "https://via.placeholder.com/150"
+        image: "./src/intro-algo.jpg" // Use relative path if running on a local server
     },
     {
         title: "Organic Chemistry",
@@ -14,7 +14,7 @@ const books = [
         type: "Exchange",
         price: 3000,
         condition: "Like New",
-        image: "https://via.placeholder.com/150"
+        image: "./src/organic-chemistry.jpg"
     },
     {
         title: "Calculus Made Easy",
@@ -22,7 +22,7 @@ const books = [
         type: "Request",
         price: 2500,
         condition: "Fair",
-        image: "https://via.placeholder.com/150"
+        image: "./src/calculus-made-easy.jpg"
     },
     {
         title: "Physics for Scientists",
@@ -30,20 +30,22 @@ const books = [
         type: "Sell",
         price: 5000,
         condition: "Excellent",
-        image: "https://via.placeholder.com/150"
+        image: "./src/physics-sci.jpg"
     }
 ];
 
-// Populate Books
+// Reference to the book grid container
 const bookGrid = document.getElementById('bookGrid');
 
 function renderBooks(filteredBooks) {
-    bookGrid.innerHTML = '';
+    bookGrid.innerHTML = ''; // Clear previous book cards
+
     filteredBooks.forEach(book => {
         const bookCard = document.createElement('div');
         bookCard.className = 'book-card';
+
         bookCard.innerHTML = `
-            <img src="${book.image}" alt="${book.title}">
+            <img src="${book.image}" alt="${book.title}" style="width: 140px; height: 180px;">
             <h3>${book.title}</h3>
             <p>Course: ${book.course}</p>
             <p>Type: ${book.type}</p>
@@ -51,6 +53,7 @@ function renderBooks(filteredBooks) {
             <p class="condition">Condition: ${book.condition}</p>
             <a href="#" class="btn">View Details</a>
         `;
+
         bookGrid.appendChild(bookCard);
     });
 }
@@ -70,7 +73,7 @@ function filterBooks() {
 
     const filteredBooks = books.filter(book => {
         const matchesSearch = book.title.toLowerCase().includes(searchTerm) ||
-                                book.course.toLowerCase().includes(searchTerm);
+                              book.course.toLowerCase().includes(searchTerm);
         const matchesCourse = course ? book.course === course : true;
         const matchesType = type ? book.type === type : true;
         return matchesSearch && matchesCourse && matchesType;
