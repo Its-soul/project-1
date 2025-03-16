@@ -17,13 +17,22 @@ a {
 }
 /* cls-1 Section */
 .cls-1 {
-    background: linear-gradient(135deg, #3498db, #8e44ad);
+    background: url('./src/prj-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.6); 
     color: white;
     padding: 10rem 2rem;
     text-align: center;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     animation: fadeIn 1s ease-out;
 }
 
+/* Typography */
 .cls-1 h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -31,19 +40,26 @@ a {
 }
 
 .cls-1 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 2rem;
     animation: fadeIn 2s ease-out;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .search-bar input {
     padding: 0.9rem;
     width: 400px;
+    max-width: 80%;
     border: none;
     border-radius: 25px;
-    margin-right: 1rem;
-    box-shadow: #86f2f8;
-    transition: width 0.3s ease-in-out; /* Smooth width transition */
+    transition: width 0.3s ease-in-out;
 }
 
 .search-bar input:focus {
@@ -52,24 +68,73 @@ a {
     width: 450px;
 }
 
+/* Button */
 .btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
     background: #24c8f5;
+    border: none;
     color: white;
-    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 12px;
     transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #125cf0;
-    transform: scale(1.05); /* Subtle scaling effect */
+    transform: scale(1.05);
 }
 
-.btn:focus {
-    outline: 3px solid #3498db;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cls-1 {
+        padding: 6rem 1rem;
+    }
+
+    .cls-1 h1 {
+        font-size: 3rem;
+    }
+
+    .cls-1 p {
+        font-size: 1.1rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cls-1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .cls-1 p {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
 
 /* Features Section */
@@ -363,41 +428,56 @@ a {
     color: #3498db;
 }
 
+/* Contact Section */
+.contact {
+    padding: 50px 20px;
+    background: #2c3e50; /* Deeper blue for a premium look */
+    color: white;
+    text-align: center;
+    border-top: 5px solid #f39c12; /* Stylish accent */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 
-        /* Contact Section */
-        .contact {
-            padding: 40px 10px;
-            background: #34495e;
-            color: white;
-            text-align: center;
-        }
+.contact h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
-        .contact h2 {
-            font-size: 36px;
-            margin-bottom: 30px;
-            animation: fadeIn 1.5s ease-in-out;
-        }
+.contact p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
 
-        .contact p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
+.contact a {
+    color: #f1c40f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
 
-        .contact a {
-            color: #ffffff;
-            font-weight: bold;
-        }
+.contact a:hover {
+    color: #e67e22;
+}
 
-        /* Footer */
-        footer {
-            background: #333333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 16px;
-        }
+/* Footer */
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    border-top: 3px solid #f39c12;
+}
 
-        footer a {
-            color: #ffffff;
-            font-weight: bold;
-        }
+footer a {
+    color: #f39c12;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #e67e22;
+}

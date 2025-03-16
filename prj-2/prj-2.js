@@ -58,13 +58,15 @@ books.forEach(book => {
     const bookCard = document.createElement('div');
     bookCard.className = 'book-card';
     bookCard.innerHTML = `
-        <h4>${book.title}</h4>
-        <p class="course-box">${book.course}</p>
-        <p><strong>Author:</strong> ${book.author}</p>
-        <p><strong>Edition:</strong> ${book.edition}</p>
-        <p><strong>Price:</strong> Rs. ${book.price}</p>
-        <p><strong>Condition:</strong> ${book.condition}</p>
-        <button class="btn view-details">View Details</button>
+        <div class="book-card-header">
+            <h4>${book.title}</h4>
+            <p class="course-box"><strong>${book.course}</strong></p>
+        </div>
+        <p><strong>📚 Author:</strong> ${book.author}</p>
+        <p><strong>📖 Edition:</strong> ${book.edition}</p>
+        <p><strong>💸 Price:</strong> Rs. ${book.price}</p>
+        <p><strong>📦 Condition:</strong> ${book.condition}</p>
+        <button class="btn view-details">✨ View Details</button>
     `;
     booksGrid.appendChild(bookCard);
 });
@@ -82,13 +84,15 @@ studyGroups.forEach(group => {
     const groupCard = document.createElement('div');
     groupCard.className = 'feature-card';
     groupCard.innerHTML = `
-        <h3>${group.name}</h3>
-        <p class="course-box">${group.course}</p>
-        <p><strong>Members:</strong> ${group.members}</p>
-        <p><strong>Description:</strong> ${group.description}</p>
-        <p><strong>Admin:</strong> ${group.admin}</p>
-        <p><strong>Schedule:</strong> ${group.schedule}</p>
-        <button class="btn join-btn">Join Group</button>
+        <div class="group-card-header">
+            <h3>${group.name}</h3>
+            <p class="course-box"><strong>${group.course}</strong></p>
+        </div>
+        <p><strong>👥 Members:</strong> ${group.members}</p>
+        <p><strong>📝 Description:</strong> ${group.description}</p>
+        <p><strong>👨‍🏫 Admin:</strong> ${group.admin}</p>
+        <p><strong>⏰ Schedule:</strong> ${group.schedule}</p>
+        <button class="btn join-btn">🌟 Join Group</button>
     `;
     groupsGrid.appendChild(groupCard);
 });
