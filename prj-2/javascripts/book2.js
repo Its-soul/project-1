@@ -6,7 +6,7 @@ const books = [
         type: "🔥 Sell",
         price: 4500,
         condition: "📖 Good – Slightly used but well-maintained!",
-        image: "./src/intro-algo.jpg"
+        image: "../src/intro-algo.jpg"
     },
     {
         title: "Organic Chemistry",
@@ -14,7 +14,7 @@ const books = [
         type: "🔄 Exchange",
         price: 3000,
         condition: "✨ Like New – Almost untouched, crisp pages!",
-        image: "./src/organic-chemistry.jpg"
+        image: "../src/organic-chemistry.jpg"
     },
     {
         title: "Calculus Made Easy",
@@ -22,7 +22,7 @@ const books = [
         type: "🤝 Request",
         price: 2500,
         condition: "📘 Fair – Some marks but fully readable!",
-        image: "./src/calculus-made-easy.jpg"
+        image: "../src/calculus-made-easy.jpg"
     },
     {
         title: "Physics for Scientists",
@@ -30,7 +30,7 @@ const books = [
         type: "💰 Sell",
         price: 5000,
         condition: "🌟 Excellent – As good as new!",
-        image: "./src/physics-sci.jpg"
+        image: "../src/physics-sci.jpg"
     }
 ];
 

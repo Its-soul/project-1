@@ -8,7 +8,7 @@ const groups = [
                       🔹 Share datasets and learning resources  
                       🔹 Collaborate on real-world projects`,
         members: 20,
-        image: "./src/data-sci.jpg"
+        image: "../src/data-sci.jpg"
     },
     {
         name: "Math Wizards",
@@ -19,7 +19,7 @@ const groups = [
                       🔹 Explore math applications in AI & programming  
                       🔹 Ace your exams with shared study materials`,
         members: 15,
-        image: "./src/maths-wizard.jpg"
+        image: "../src/maths-wizard.jpg"
     },
     {
         name: "Organic Chemistry Group",
@@ -30,7 +30,7 @@ const groups = [
                       🔹 Discuss organic synthesis strategies  
                       🔹 Prepare for exams with quizzes & group discussions`,
         members: 25,
-        image: "./src/organic-chem.jpg"
+        image: "../src/organic-chem.jpg"
     },
     {
         name: "Physics for Engineers",
@@ -41,7 +41,7 @@ const groups = [
                       🔹 Explore real-world physics applications  
                       🔹 Access helpful study materials & video explanations`,
         members: 18,
-        image: "./src/quantum-phy.jpg"
+        image: "../src/quantum-phy.jpg"
     }
 ];
 
