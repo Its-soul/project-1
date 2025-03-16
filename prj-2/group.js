@@ -1,3 +1,4 @@
+// Sample Group Data
 const groups = [
     {
         name: "Data Science Enthusiasts",
@@ -59,7 +60,7 @@ function renderGroups(filteredGroups) {
             <p class="group-details">${group.members} Members</p>
 
             <!-- First Join Group Button -->
-            <a href="#" class="btn btn-join">Join Group</a>
+            <a href="#" class="btn btn-join">📚 Join Group</a>
 
             <div class="btn-container">
                 <a href="#" class="btn btn-video">📹 Video Call</a>

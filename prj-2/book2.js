@@ -1,35 +1,35 @@
-// Sample Book Data
+// Sample Book Data with Enhanced Descriptions
 const books = [
     {
         title: "Introduction to Algorithms",
-        course: "Computer Science",
-        type: "Sell",
+        course: "💻 Computer Science",
+        type: "🔥 Sell",
         price: 4500,
-        condition: "Good",
-        image: "./src/intro-algo.jpg" // Use relative path if running on a local server
+        condition: "📖 Good – Slightly used but well-maintained!",
+        image: "./src/intro-algo.jpg"
     },
     {
         title: "Organic Chemistry",
-        course: "Chemistry",
-        type: "Exchange",
+        course: "🧪 Chemistry",
+        type: "🔄 Exchange",
         price: 3000,
-        condition: "Like New",
+        condition: "✨ Like New – Almost untouched, crisp pages!",
         image: "./src/organic-chemistry.jpg"
     },
     {
         title: "Calculus Made Easy",
-        course: "Mathematics",
-        type: "Request",
+        course: "📊 Mathematics",
+        type: "🤝 Request",
         price: 2500,
-        condition: "Fair",
+        condition: "📘 Fair – Some marks but fully readable!",
         image: "./src/calculus-made-easy.jpg"
     },
     {
         title: "Physics for Scientists",
-        course: "Physics",
-        type: "Sell",
+        course: "🛰️ Physics",
+        type: "💰 Sell",
         price: 5000,
-        condition: "Excellent",
+        condition: "🌟 Excellent – As good as new!",
         image: "./src/physics-sci.jpg"
     }
 ];
@@ -47,16 +47,17 @@ function renderBooks(filteredBooks) {
         bookCard.innerHTML = `
             <img src="${book.image}" alt="${book.title}" style="width: 140px; height: 180px;">
             <h3>${book.title}</h3>
-            <p>Course: ${book.course}</p>
-            <p>Type: ${book.type}</p>
-            <p class="price">Price: Rs ${book.price}</p>
-            <p class="condition">Condition: ${book.condition}</p>
-            <a href="#" class="btn">View Details</a>
+            <p><strong>📚 Course:</strong> ${book.course}</p>
+            <p><strong>🔹 Type:</strong> ${book.type}</p>
+            <p class="price"><strong>💰 Price:</strong> Rs ${book.price}</p>
+            <p class="condition"><strong>✅ Condition:</strong> ${book.condition}</p>
+            <a href="#" class="btn">📖 View Details</a>
         `;
 
         bookGrid.appendChild(bookCard);
     });
 }
+
 
 // Initial Render
 renderBooks(books);
