@@ -9,6 +9,12 @@ body {
     font-family: 'Arial', sans-serif;
     background: #f9f9f9;
     color: #333;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/048/642/588/non_2x/bookshelf-with-many-books-blurred-background-space-for-text-photo.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-color);
 }
 
 .book-section {
@@ -24,12 +30,12 @@ body {
 
 .book-header h1 {
     font-size: 2.5rem;
-    color: #34495e;
+    color:white;
 }
 
 .book-header p {
-    font-size: 1.2rem;
-    color: #7f8c8d;
+    font-size: 1.4rem;
+    color:white;
 }
 
 .search-filters {
@@ -59,11 +65,14 @@ body {
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+    perspective: 1000px; /* Adds 3D perspective to the card */
+    position: relative;
 }
 
 .book-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-15px) rotateY(10deg) rotateX(10deg); /* Slight 3D rotation effect */
+    box-shadow: 8px 8px 20px black;
 }
 
 .book-card img {
@@ -71,6 +80,11 @@ body {
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: transform 0.5s ease; /* Smooth transition for the image */
+}
+
+.book-card:hover img {
+    transform: scale(1.2) translateZ(50px); /* Scales up the image and pops it out in 3D */
 }
 
 .book-card h3 {
