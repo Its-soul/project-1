@@ -7,7 +7,7 @@ const books = [
         price: 4500,
         condition: "📖 Good – Slightly used but well-maintained!",
         image: "../src/intro-algo.jpg",
-        buyLink: "https://www.amazon.in/s?k=introduction+to+algorithms&crid=17XZ4OGMS8GAA&sprefix=introduction+to+al%2Caps%2C283&ref=nb_sb_ss_ts-doa-p_1_18" // Buy Now Link
+        buyLink: "https://www.amazon.in/Introduction-internationally-comprehensive-introduction-algorithms/dp/B09CGX21GH/ref=sr_1_3?crid=5T4NN8JVV7HS&dib=eyJ2IjoiMSJ9.UG8jPJxLXf3sBa1SKWDaXRklKjR0GGTxFy1puyYAmb4evMMUANwia3rboHvudNufb9wf-6y7AJPwtfdd281bLK33sySD7Lnd6dGvfZOt5HCyQUhtVAaMKPimxDk_UB7fhzojf83JTKhUOBzm9cmA1N00aIN8IGT6m4nEkGBIew1QqWAoCviPPrxLQPZTJaL_7P8Bxqv-ECFucbKYpAVsfgzQ8LB0jEZd-h5ZgtBQYoM.FA4xQSQyR-tPELCjSMJVHsfnZV83XWBXAE_8vOvHGnI&dib_tag=se&keywords=introduction+to+algorithms&qid=1742645814&sprefix=intorductio%2Caps%2C415&sr=8-3" // Buy Now Link
     },
     {
         title: "Organic Chemistry",
