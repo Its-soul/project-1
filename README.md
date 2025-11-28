@@ -20,7 +20,7 @@
 
 <p align="center">
   <!-- Replace links after uploading your images -->
-  <img src="hhttps://github.com/Its-soul/project-1/blob/main/prj-2/src/Home%20page.png" width="75%" alt="StudySphere demo image"/>
+  <img src="https://github.com/Its-soul/project-1/blob/main/prj-2/src/Home%20page.png" width="75%" alt="StudySphere demo image"/>
 </p>
 
 ---
