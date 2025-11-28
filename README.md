@@ -20,7 +20,7 @@
 
 <p align="center">
   <!-- Replace links after uploading your images -->
-  <img src="https://github.com/Its-soul/project-1/blob/main/prj-2/src/Screenshot%20(98).png" width="75%" alt="StudySphere demo image"/>
+  <img src="hhttps://github.com/Its-soul/project-1/blob/main/prj-2/src/Home%20page.png" width="75%" alt="StudySphere demo image"/>
 </p>
 
 ---
@@ -65,7 +65,7 @@
 > Replace the image URLs with your uploaded links!
 
 ### 🔹 Home Page  
-<img src="https://github.com/Its-soul/project-1/blob/main/prj-2/src/Screenshot%20(98).png" width="80%" />
+<img src="https://github.com/Its-soul/project-1/blob/main/prj-2/src/Home%20page.png" width="80%" />
 
 ### 🔹 Group Study  
 <img src="https://github.com/Its-soul/project-1/blob/main/prj-2/src/Screenshot%202025-11-28%20065219.png" width="80%" />
