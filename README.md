@@ -12,7 +12,6 @@
   <img src="https://img.shields.io/badge/Status-Active-brightgreen" />
   <img src="https://img.shields.io/badge/Hackathon Project-Yes-blueviolet" />
   <img src="https://img.shields.io/badge/Author-Vaibhav Yadav-orange" />
-  <img src="https://img.shields.io/github/license/your-username/studysphere" />
 </p>
 
 ---
